@@ -1,0 +1,45 @@
+Using pip 20.2.4 from C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip (python 3.8)
+Non-user install because site-packages writeable
+Created temporary directory: C:\Users\aleja\AppData\Local\Temp\pip-ephem-wheel-cache-e10en2jh
+Created temporary directory: C:\Users\aleja\AppData\Local\Temp\pip-req-tracker-ih8mt53g
+Initialized build tracking at C:\Users\aleja\AppData\Local\Temp\pip-req-tracker-ih8mt53g
+Created build tracker: C:\Users\aleja\AppData\Local\Temp\pip-req-tracker-ih8mt53g
+Entered build tracker: C:\Users\aleja\AppData\Local\Temp\pip-req-tracker-ih8mt53g
+Created temporary directory: C:\Users\aleja\AppData\Local\Temp\pip-install-n7mogzfo
+ERROR: Invalid requirement: "'Requirement"
+Exception information:
+Traceback (most recent call last):
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_vendor\packaging\requirements.py", line 98, in __init__
+    req = REQUIREMENT.parseString(requirement_string)
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_vendor\pyparsing.py", line 1955, in parseString
+    raise exc
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_vendor\pyparsing.py", line 3250, in parseImpl
+    raise ParseException(instring, loc, self.errmsg, self)
+pip._vendor.pyparsing.ParseException: Expected W:(abcd...), found "'"  (at char 0), (line:1, col:1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_internal\req\constructors.py", line 359, in parse_req_from_line
+    req = Requirement(req_as_string)
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_vendor\packaging\requirements.py", line 100, in __init__
+    raise InvalidRequirement(
+pip._vendor.packaging.requirements.InvalidRequirement: Parse error at ""'Require"": Expected W:(abcd...)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_internal\cli\base_command.py", line 228, in _main
+    status = self.run(options, args)
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_internal\cli\req_command.py", line 182, in wrapper
+    return func(self, options, args)
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_internal\commands\install.py", line 294, in run
+    reqs = self.get_requirements(args, options, finder, session)
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_internal\cli\req_command.py", line 316, in get_requirements
+    req_to_add = install_req_from_line(
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_internal\req\constructors.py", line 409, in install_req_from_line
+    parts = parse_req_from_line(name, line_source)
+  File "C:\Users\aleja\anaconda3\envs\lendingClub_env\lib\site-packages\pip\_internal\req\constructors.py", line 374, in parse_req_from_line
+    raise InstallationError(msg)
+pip._internal.exceptions.InstallationError: Invalid requirement: "'Requirement"
+Removed build tracker: 'C:\\Users\\aleja\\AppData\\Local\\Temp\\pip-req-tracker-ih8mt53g'
